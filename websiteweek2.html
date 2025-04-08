@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <style>
+            body { font-family: 'Times New Roman', Times, serif; text-align: left;
+            margin: 20px;}
+            h1, h2, p { font-family: 'Times New Roman', Times, serif;}
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                margin-top: 20px;
+                padding: 8px;}
+        </style>
+
+        <link rel="icon" type="image/png" href="images/owlicon.JPG" sizes="16x16">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Listing and Registration</h1>
+        </header>
+
+        <p>The following is a list of members who have already registered</p>
+
+        <ol type="i" >
+            <li>Samson Origi</li>
+            <li>Mwangi Hussein</li>
+            <li>Shameen Kana</li>
+            <li>Stephen Odongo</li>
+            <li>Joe Macharia</li>
+        </ol>
+
+        <p>Use the table below to view some of our newest members.</p>
+
+        <hr>
+        <!--table of 5 contacts with; name, address, mobile and emails , repeated again in the registration form-->
+        <h2>Table of Contacts</h2>
+        <table style="width: 55%;">
+
+                <thead>
+                <tr>
+                    <th>Full Names</th>
+                    <th>Home Address</th>
+                    <th>Phone Number. </th>
+                    <th>Email Address</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td> Amira Hassan
+                    </td>
+                    <td> 123 Koinange Street, Nairobi, Kenya</td>
+                    <td>+254 722 123 456
+                    </td>
+                    <td> amira.hassan@example.com</td>
+                </tr>
+                <tr>
+                    <td>Kofi Owusu</td>
+                    <td>456 Haile Selassie Road, Dar es Salaam, Tanzania
+                    </td>
+                    <td>+255 784 567 890</td>
+                    <td>kofi.owusu@example.com</td>
+                </tr>
+                <tr>
+                    <td>Fatima Abdi</td>
+                    <td>789 Somalia Road, Mogadishu, Somalia</td>
+                    <td>+252 61 123 456
+                    </td>
+                    <td>fatima.abdi@example.com</td>
+                </tr>
+                <tr>
+                    <td>Nuru Mwanga</td>
+                    <td>901 Lumumba Street, Kampala, Uganda</td>
+                    <td>+256 772 345 678
+                    </td>
+                    <td>nuru.mwanga@example.com</td>
+                </tr>
+                <tr>
+                    <td>Habib Ali</td>
+                    <td>234 Bole Road, Addis Ababa, Ethiopia</td>
+                    <td>+251 911 234 567</td>
+                    <td>habib.ali@example.com</td>
+                </tr>
+                </tbody>
+        </table>
+        
+        <br>
+        <br>
+        <hr>
+
+        <a href="https://pexels.com">
+            <img src="https://images.pexels.com/photos/86596/owl-bird-eyes-eagle-owl-86596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="An owl named October " width="50%" height="50%">
+            <br><br>
+            <button type="button">For more images such as those above visit www.pexels.com</button>
+        </a>
+        <br>
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+
+                <!--Personal Details - Name, email, passwords, and date of reg.-->
+                <label for = "name">Full Names:</label>
+                <input type = "text" id="name" name="name" placeholder="Enter your full names" required>
+                <br><br>
+                <label for ="email">Email:</label>
+                <input type = "email" id="email" name="email" placeholder="Enter a valid email address" required>
+                <br><br>
+                <label for = "password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Leave Blank for now">
+                <br><br>
+                <label for="date">Date of Registration</label>
+                <input type="date" id="date" name="date" required>
+                <br><br>
+
+                <!--Dropdowns-->
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value=" ">Select your country</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="South Sudan">South Sudan</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Eritrea">Eritrea</option>
+                </select>
+                <br><br>
+
+                <!--Radio Buttons-->
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="male">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+                <br><br>
+
+                <!--Checkboxes-->
+                <section>
+                <label>Hobbies:</label>
+
+                <input type="checkbox" id="travel" name="hobbies" value="Travel">
+                <label for="travel">Travel</label>
+
+                <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                <label for="sports">Sports</label>
+
+                <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                <label for="reading">Reading</label>
+                </section>
+
+            </form>
+            <br><br>
+
+                <!--Table of 5 contacts with; name, address, mobile and emails-->
+            <h2>Table of Contacts</h2>
+            <table style="width: 55%;">
+    
+                    <thead>
+                    <tr>
+                        <th>Full Names</th>
+                        <th>Home Address</th>
+                        <th>Phone Number. </th>
+                        <th>Email Address</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td> Amira Hassan
+                        </td>
+                        <td> 123 Koinange Street, Nairobi, Kenya</td>
+                        <td>+254 722 123 456
+                        </td>
+                        <td> amira.hassan@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Kofi Owusu</td>
+                        <td>456 Haile Selassie Road, Dar es Salaam, Tanzania
+                        </td>
+                        <td>+255 784 567 890</td>
+                        <td>kofi.owusu@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fatima Abdi</td>
+                        <td>789 Somalia Road, Mogadishu, Somalia</td>
+                        <td>+252 61 123 456
+                        </td>
+                        <td>fatima.abdi@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Nuru Mwanga</td>
+                        <td>901 Lumumba Street, Kampala, Uganda</td>
+                        <td>+256 772 345 678
+                        </td>
+                        <td>nuru.mwanga@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Habib Ali</td>
+                        <td>234 Bole Road, Addis Ababa, Ethiopia</td>
+                        <td>+251 911 234 567</td>
+                        <td>habib.ali@example.com</td>
+                    </tr>
+                    </tbody>
+            </table>
+
+
+
+
+
+        </section>
+    
+        
+
+    </body>
+
+</html>    
+        
